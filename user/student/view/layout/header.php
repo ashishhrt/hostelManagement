@@ -14,7 +14,7 @@
 			    <div class="collapse navbar-collapse" id="myNavbar">
 			      <ul id="options" class="nav navbar-nav">
 			        <li><a href="'.HTTP.'user/student/view/home.php">Profile</a></li>
-			        <li><a href="'.HTTP.'user/student/view/bookingStatus.php">Booking status</a></li>
+			        <li><a href="'.HTTP.'user/student/view/bookingStatus.php">Booking details</a></li>
 			        <li><a href="'.HTTP.'hostels.php">Search hostels</a></li> 
 			        <li><a href="#">Help</a></li> 
 			      </ul>
