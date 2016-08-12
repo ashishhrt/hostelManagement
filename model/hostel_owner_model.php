@@ -3,7 +3,6 @@
 	class HostelOwner
 	{
 		public $owner_id;
-		//public $hostel_id;
 		public $owner_name;
 		public $owner_age;
 		public $owner_sex;

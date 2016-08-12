@@ -1,5 +1,4 @@
 <?php
-	//include_once("view/hostel_owner_view.php");
 	include_once(ROOT_DIR."model/model.php");
 
 	class HostelOwnerController{

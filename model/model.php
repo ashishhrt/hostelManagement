@@ -9,7 +9,6 @@
 	class Model{
 		private $conn;
 		public function  __construct(){
-			//echo 'Model constructor called<br>';
 			//get connection object
 			$this->conn = new Connection();
 		}

@@ -9,7 +9,6 @@
 		private $databaseName= 'hostel_management';
 
 		public function __construct(){
-			//echo 'Connection constructor called<br>';
 			//create connection
 			$this->conn = new mysqli($this->servername, $this->username, $this->password, $this->databaseName);
 
@@ -22,13 +21,7 @@
 			
 		}
 		public function getConnection(){
-			/*
-			if(!$this->conn){
-				$newConn = new Connection();
-				return $newConn->getConnection();
-			}
-			else
-			*/
+			
 			return $this->conn;
 		}
 		

@@ -68,6 +68,8 @@
 	<?php 
 		if(isset($_SESSION['student_id']))
 			include_once(ROOT_DIR.'user/student/view/layout/header.php');
+		else if(isset($_SESSION['owner_id']))
+				include_once(ROOT_DIR.'user/owner/view/layout/header.php');
 		else
 			include_once(ROOT_DIR.'view/layout/header.php');
 	?>
@@ -79,7 +81,7 @@
 			<?php
 				echo '<tr><td>Name<td><td>'.ucwords($ownerDetails->owner_name).'</td></tr>';
 				echo '<tr><td>Age<td><td>'.$ownerDetails->owner_age.'</td></tr>';
-				echo '<tr><td>Sex<td><td>'.ucfirst($ownerDetails->owner_sex).'</td></tr>';
+				echo '<tr><td>Sex<td><td>'.(($ownerDetails->owner_sex == "m")?"Male":"Female").'</td></tr>';
 				echo '<tr><td>Contact No<td><td>'.$ownerDetails->owner_no.'</td></tr>';
 			?>
 		</table>

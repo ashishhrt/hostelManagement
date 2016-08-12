@@ -1,5 +1,5 @@
 <?php
-	//include_once('../config.php');
+	#include_once('../config.php');
 	include_once(ROOT_DIR.'user/student/model/model.php');
 
 	class Authenticate{

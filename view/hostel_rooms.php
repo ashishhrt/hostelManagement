@@ -69,6 +69,8 @@
 	<?php 
 		if(isset($_SESSION['student_id']))
 			include_once(ROOT_DIR.'user/student/view/layout/header.php');
+		else if(isset($_SESSION['owner_id']))
+				include_once(ROOT_DIR.'user/owner/view/layout/header.php');
 		else
 			include_once(ROOT_DIR.'view/layout/header.php');
 	?>
